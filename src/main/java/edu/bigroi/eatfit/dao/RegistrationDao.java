@@ -2,15 +2,11 @@ package edu.bigroi.eatfit.dao;
 
 import java.util.List;
 
-import edu.bigroi.eatfit.service.User;
+import edu.bigroi.eatfit.service.entities.User;
 
 public interface RegistrationDao {
 
 	boolean checkUser(User user);
-
-	// boolean checkLogin(String login);
-
-	// boolean checkPassword(String password);
 
 	boolean isExistLogin(String login);
 
@@ -18,5 +14,11 @@ public interface RegistrationDao {
 
 	void update(User user);
 
-	List<User> getAllUsers();
+	void delete(User user);
+
+	List<User> getAll();
+
+	User get(Long id);
+
+	void deleteById(Long id);
 }

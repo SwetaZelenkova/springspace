@@ -2,19 +2,23 @@ package edu.bigroi.eatfit.service;
 
 import java.util.List;
 
+import edu.bigroi.eatfit.service.entities.User;
+
 public interface RegistrationService {
 
-	public boolean checkUser(User user);
+	boolean checkUser(User user);
 
-	public boolean checkLogin(String login);
+	boolean isExistLogin(String login);
 
-	public boolean checkPassword(String password);
+	void save(User user);
 
-	public boolean isExistLogin(String login);
+	void update(User user);
 
-	public void save(User user);
+	void delete(User user);
 
-	public void update(User user);
+	void deleteById(Long id);
 
-	public List<User> getAllUsers();
+	User get(Long id);
+
+	List<User> getAll();
 }

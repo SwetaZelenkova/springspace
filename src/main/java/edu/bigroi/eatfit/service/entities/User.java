@@ -1,4 +1,4 @@
-package edu.bigroi.eatfit.service;
+package edu.bigroi.eatfit.service.entities;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
